@@ -1,0 +1,7 @@
+{
+  "name": "toTheTable",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
