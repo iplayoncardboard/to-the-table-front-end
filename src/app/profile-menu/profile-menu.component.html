@@ -1,0 +1,33 @@
+<ion-menu menuId="profile" side="end" contentId="main" >
+  <ion-header>
+    <ion-button  (click)="toggleMenu()">x</ion-button>
+  </ion-header>
+  <ion-content>
+    <ion-list>
+      <ion-menu-toggle>
+        <ion-item routerLink='profile'>
+          <ion-icon name="person-circle-outline" slot="start"></ion-icon>
+          <ion-label>Profile</ion-label>
+      </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink='library'>
+          <ion-icon name="book-outline" slot="start"></ion-icon>
+          <ion-label>Game Library</ion-label>
+      </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink='friends'>
+          <ion-icon name="people-outline" slot="start"></ion-icon>
+          <ion-label>Friends</ion-label>
+      </ion-item>
+      </ion-menu-toggle>
+      <ion-menu-toggle>
+        <ion-item routerLink='/'>
+          <ion-icon name="log-out-outline" slot="start"></ion-icon>
+          <ion-label>Log Out</ion-label>
+      </ion-item>
+      </ion-menu-toggle>
+    </ion-list>
+  </ion-content>
+</ion-menu>

@@ -8,13 +8,32 @@ const routes: Routes = [
   },
   {
     path:'events',
-    loadChildren: () =>  import('./events/events.module').then(m => m.EventsModule)
+    loadChildren: () =>  import('./events/events.module').then(m => m.EventsPageModule)
+  },
+  {
+    path: "sign-in",
+    loadChildren: () => import('./sign-in/sign-in.module').then(m => m.SignInPageModule)
+  },
+  {
+    path:'library',
+    loadChildren: () => import('./library/library.module').then(m => m.LibraryPageModule)
+  },{
+    path:'friends',
+    loadChildren: () => import('./friends/friends.module').then(m => m.FriendsPageModule)
+  },
+  {
+    path:'profile',
+    loadChildren: () => import('./profile/profile.module').then(m => m.ProfilePageModule)
+  },
+  {
+    path:'messages',
+    loadChildren: () => import('./messages/messages.module').then(m => m.MessagesPageModule)
   },
   {
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
-  },
+  }
 ];
 
 @NgModule({

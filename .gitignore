@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Specifies intentionally untracked files to ignore when using Git
 # http://git-scm.com/docs/gitignore
 
@@ -30,7 +29,6 @@ npm-debug.log*
 /platforms
 /plugins
 /www
-=======
 # Logs
 logs
 *.log
@@ -135,4 +133,5 @@ dist
 
 # TernJS port file
 .tern-port
->>>>>>> 3b9a2bc0d3e52357bd7673a601bf3480154e6641
+
+auth.config.ts
